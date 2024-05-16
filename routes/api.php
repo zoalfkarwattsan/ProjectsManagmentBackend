@@ -31,6 +31,8 @@ Route::group(['middleware' => ['auth:api', 'activeMember'], 'as' => 'api.'], fun
 
     Route::get('responsible/projects', [\App\Modules\Project\Controllers\ProjectController::class, 'indexByAuthResponsible']);
 
+
+
     Route::post('task/change-status/{task}', [\App\Modules\Task\Controllers\TaskController::class, 'changeStatus'])->name('tasks.change-status');
 
     Route::get('tasks/byProject/{project}', [\App\Modules\Task\Controllers\TaskController::class, 'indexByProject'])->name('tasks.byProject');
