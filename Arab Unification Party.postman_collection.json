@@ -1,0 +1,2413 @@
+{
+	"info": {
+		"_postman_id": "f4c04cf2-3874-4505-b6ff-bb49a92e41f7",
+		"name": "Arab Unification Party",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4573432"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "Admins",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"columns\": [\r\n        {\r\n            \"data\": \"id\",\r\n            \"name\":\"id\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        },\r\n        {\r\n            \"data\": \"name\",\r\n            \"name\":\"name\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"email\",\r\n            \"name\":\"email\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"actions\",\r\n            \"name\":\"actions\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        }\r\n    ],\r\n    \"page\": 1,\r\n    \"limit\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/admins",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Responsibles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"columns\": [\r\n        {\r\n            \"data\": \"id\",\r\n            \"name\":\"id\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        },\r\n        {\r\n            \"data\": \"email\",\r\n            \"name\":\"email\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"actions\",\r\n            \"name\":\"actions\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        }\r\n    ],\r\n    \"start\": 0,\r\n    \"length\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/responsibles",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"responsibles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Citizens",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"columns\": [\r\n        {\r\n            \"data\": \"id\",\r\n            \"name\":\"id\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        },\r\n        {\r\n            \"data\": \"name\",\r\n            \"name\":\"name\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"email\",\r\n            \"name\":\"email\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"actions\",\r\n            \"name\":\"actions\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        }\r\n    ],\r\n    \"page\": 1,\r\n    \"limit\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/admins",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload File",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/D:/Various/profile.png"
+										},
+										{
+											"key": "type",
+											"value": "jpg,png",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "avatar.jpg",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/file/upload",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"file",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload Excel",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/D:/Personal-Projects/CloudyPro/Tawhid Project/Info/Elections/لوائح شطب إنتخابات 2021 -  الشوف بحسب الضيع/الباروك.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.cloudypro-wahhab.ga/api/user/import/3/store",
+									"protocol": "https",
+									"host": [
+										"api",
+										"cloudypro-wahhab",
+										"ga"
+									],
+									"path": [
+										"api",
+										"user",
+										"import",
+										"3",
+										"store"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "show",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/admins/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/admins",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/admins/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/admins/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"columns\": [\r\n        {\r\n            \"data\": \"id\",\r\n            \"name\":\"id\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        },\r\n        {\r\n            \"data\": \"fname\",\r\n            \"name\":\"name\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        }\r\n    ],\r\n    \"start\": 0,\r\n    \"length\": 10,\r\n    \"page\": 1,\r\n    \"limit\": 10,\r\n    \"filter\":{\r\n        \"fname\":\"سعيدة\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/users",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var res = pm.response.json();\r",
+											"pm.collectionVariables.set(\"token\", res.data.token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"admin@admin.com\",\r\n    \"password\":\"admin_admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/dashboard/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"dashboard",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Citizens",
+					"item": [
+						{
+							"name": "Get Election Citizens",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessToken",
+											"value": "{{token}}",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"columns\": [\r\n        {\r\n            \"data\": \"id\",\r\n            \"name\":\"id\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        },\r\n        {\r\n            \"data\": \"name\",\r\n            \"name\":\"name\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"email\",\r\n            \"name\":\"email\",\r\n            \"searchable\":true,\r\n            \"orderable\":true\r\n        },\r\n        {\r\n            \"data\": \"actions\",\r\n            \"name\":\"actions\",\r\n            \"searchable\":false,\r\n            \"orderable\":false\r\n        }\r\n    ],\r\n    \"page\": 1,\r\n    \"limit\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/election/8/users/index",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"election",
+										"8",
+										"users",
+										"index"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Team Members",
+					"item": [
+						{
+							"name": "getAllProjectManagersForProjectWithQ",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/api/projectmanagers/getAllProjectManagersForProjectWithQ/4",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"projectmanagers",
+										"getAllProjectManagersForProjectWithQ",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllResponsiblesForProjectWithQ",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/responsible/getAllResponsiblesWithQ",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"responsible",
+										"getAllResponsiblesWithQ"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Elections",
+					"item": [
+						{
+							"name": "Boxes",
+							"item": [
+								{
+									"name": "Index",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/boxes?page=1&limit=10",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"boxes"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Index By Election",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/election/3/boxes/index?page=1&limit=10",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"election",
+												"3",
+												"boxes",
+												"index"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Show",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "tokenType",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/boxes/",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"boxes",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "LiveStream",
+							"item": [
+								{
+									"name": "Show By Election",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/getActiveElectionLiveStream",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"getActiveElectionLiveStream"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Import",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessToken",
+											"value": "{{token}}",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/ibaai/Desktop/لوائح الشطب/شحيم حي الشريفة/____ __ _______.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/user/import/7/store",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"import",
+										"7",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset Election",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/election/8/reset",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"election",
+										"8",
+										"reset"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Settings",
+					"item": [
+						{
+							"name": "Settings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/tawhid/api/setting/all",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"tawhid",
+										"api",
+										"setting",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Team Member",
+			"item": [
+				{
+					"name": "General",
+					"item": [
+						{
+							"name": "Check Version",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/api/checkversion",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"checkversion"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Elections",
+					"item": [
+						{
+							"name": "Get Active Box By Auth Delegater",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/box/active",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"box",
+										"active"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Vote For Citizen",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{localServer}} /api/citizen/vote/1",
+									"host": [
+										"{{localServer}} "
+									],
+									"path": [
+										"api",
+										"citizen",
+										"vote",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Close Box Request",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{localServer}} /api/box/close",
+									"host": [
+										"{{localServer}} "
+									],
+									"path": [
+										"api",
+										"box",
+										"close"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Real Vote",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"party_id\":2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/vote/real",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"vote",
+										"real"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Active Parties",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/election/active/parties",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"election",
+										"active",
+										"parties"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Announcements",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/api/announcements/list",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"announcements",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Citizens For Arrived",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/responsible/getAssignedUsers",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"responsible",
+										"getAssignedUsers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sync Offline Election",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 55,\r\n    \"close_request\": 1,\r\n    \"is_closed\": 1,\r\n    \"last_sync_at\": \"2022-04-25 10:00:13\",\r\n    \"voted_users\": [\r\n        1,\r\n        2,\r\n        3,\r\n        4\r\n    ],\r\n    \"real_votes\": {\r\n        \"white_paper\": 1,\r\n        \"cancelled\": 1,\r\n        \"parties\": [\r\n            {\r\n                \"id\": 1,\r\n                \"votes_num\": 1,\r\n                \"candidates\": [\r\n                    {\r\n                        \"id\": 12,\r\n                        \"votes_num\": 1\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": 4,\r\n                \"votes_num\": 1,\r\n                \"candidates\": [\r\n                    {\r\n                        \"id\": 13\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/offline/syncElection",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"offline",
+										"syncElection"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Projects",
+					"item": [
+						{
+							"name": "Auth User Projects",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{serverUrl}}/api/responsible/projects",
+									"host": [
+										"{{serverUrl}}"
+									],
+									"path": [
+										"api",
+										"responsible",
+										"projects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Task Status",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status_id\":1,\r\n    \"description\":\"Task description 1\",\r\n    \"responsible_id\":2\r\n}"
+								},
+								"url": {
+									"raw": "{{local}}/api/task/change-status/5",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"task",
+										"change-status",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Citizens",
+					"item": []
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "show",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/responsibles/5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"responsibles",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "index",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{serverUrl}}/api/responsibles",
+									"host": [
+										"{{serverUrl}}"
+									],
+									"path": [
+										"api",
+										"responsibles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/responsibles",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"responsibles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/responsibles/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"responsibles",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/admins/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"admins",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var res = pm.response.json();\r",
+											"pm.collectionVariables.set(\"token\", res.access_token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"+9611\",\r\n    \"password\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Auto Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var res = pm.response.json();\r",
+											"pm.collectionVariables.set(\"token\", res.access_token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/user/info",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "index Notifcations",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/responsible/notifications",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"responsible",
+										"notifications"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Stock",
+			"item": [
+				{
+					"name": "Transactions",
+					"item": [
+						{
+							"name": "ShipmentTransactions",
+							"item": [
+								{
+									"name": "shipmentTransactions",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/shipmentTransactions?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"shipmentTransactions"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "shipmentTransactionBalance",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/shipmentTransactions/shipmentBalance?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"shipmentTransactions",
+												"shipmentBalance"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "storeShipmentTransactions",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "19|zkmbq1lizbceKvqHGquvGGrabs5lFPosH3sglcbt",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"source_id\": 1,\r\n    \"destination_id\": 2,\r\n    \"destination_type\": \"App\\\\Modules\\\\Stock\\\\Center\\\\Models\\\\Center\",\r\n    \"source_type\": \"\",\r\n    \"transaction_date\": \"2022-07-23\",\r\n    \"transaction_by\": 1,\r\n    \"description\": \"description\",\r\n    \"transaction_status_id\": 1,\r\n    \"is_refund\": 0,\r\n    \"source_name\": \"\",\r\n    \"amount\": 500,\r\n    \"shipment_category_id\": 1,\r\n    \"unit_of_measurement_id\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/shipmentTransactions",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"shipmentTransactions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "approveShipmentTransaction",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/transaction/approve/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"transaction",
+												"approve",
+												"5"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CashTransactions",
+							"item": [
+								{
+									"name": "storeCashTransactions",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "19|zkmbq1lizbceKvqHGquvGGrabs5lFPosH3sglcbt",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n{\r\n        \"source_id\": 1,\r\n        \"destination_id\": 2,\r\n        \"destination_type\": \"App\\\\Modules\\\\Stock\\\\Center\\\\Models\\\\Center\",\r\n        \"source_type\": \"\",\r\n        \"transaction_date\": \"2022-07-23\",\r\n        \"transaction_by\": 1,\r\n        \"description\": \"description\",\r\n        \"transaction_status_id\": 1,\r\n        \"is_refund\": 0,\r\n        \"source_name\": \"\",\r\n        \"amount\": 1000,\r\n        \"currency_id\": 1\r\n    }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/cashTransactions/",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"cashTransactions",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "approveCashTransactions",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "19|zkmbq1lizbceKvqHGquvGGrabs5lFPosH3sglcbt",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/transaction/approve/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"transaction",
+												"approve",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "cashTransactionBalance",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "19|zkmbq1lizbceKvqHGquvGGrabs5lFPosH3sglcbt",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/cashTransactions/cashBalance?start=0&length=10&limit=10&page=1&filter[center_id]=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"cashTransactions",
+												"cashBalance"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "filter[center_id]",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "cashTransactions",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/cashTransactions?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"cashTransactions"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Centers",
+							"item": [
+								{
+									"name": "centers",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/centers?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"centers"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "storeCenter",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\" :\"center\",\r\n    \"admin_id\" :1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/centers",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"centers"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "shipmentCategories",
+							"item": [
+								{
+									"name": "categories",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/categories?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"categories"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "storeCategory",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\" :\"category\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/categories",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"categories"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Currency",
+							"item": [
+								{
+									"name": "currencies",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/currencies?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"currencies"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "storeCurrency",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\" :\"currency\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/currencies",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"currencies"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "unitOfMeasurements",
+							"item": [
+								{
+									"name": "unitOfMeasurements",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/unitOfMeasurements?start=0&length=10&limit=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"unitOfMeasurements"
+											],
+											"query": [
+												{
+													"key": "start",
+													"value": "0"
+												},
+												{
+													"key": "length",
+													"value": "10"
+												},
+												{
+													"key": "limit",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "storeUnitOfMeasurements",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\" :\"unit of measurement\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/api/unitOfMeasurements",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"unitOfMeasurements"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://api.arabunificationparty.com"
+		},
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}

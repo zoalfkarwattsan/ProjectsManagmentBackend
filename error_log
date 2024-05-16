@@ -1,0 +1,3 @@
+[25-Jul-2022 09:32:24 UTC] PHP Warning:  Module "Phar" is already loaded in Unknown on line 0
+[25-Jul-2022 09:32:41 UTC] PHP Warning:  Module "Phar" is already loaded in Unknown on line 0
+[25-Jul-2022 09:38:19 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
